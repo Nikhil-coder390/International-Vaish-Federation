@@ -48,7 +48,7 @@ export function Header() {
                         </div>
                         <div className="w-12 h-12 relative">
                             <Image
-                                src="/God.png"
+                                src="/god.png"
                                 alt="God Image"
                                 fill
                                 className="object-contain"
