@@ -1,65 +1,64 @@
-import Image from "next/image";
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
+import { HeroCarousel } from "@/components/home/hero-carousel";
+import { ProgramsGrid } from "@/components/home/programs-grid";
+import { StatsCounter } from "@/components/home/stats-counter";
+import { LeadershipTestimonials } from "@/components/home/leadership-section";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-background font-sans">
+      <Header />
+      <HeroCarousel />
+
+      {/* Welcome Message */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center max-w-4xl">
+          <span className="inline-block py-1 px-3 rounded-full bg-orange-100 text-primary text-sm font-semibold mb-4">
+            Since 2013
+          </span>
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            Welcome to International Vaish Federation
+          </h2>
+          <p className="text-lg text-gray-600 leading-relaxed mb-8">
+            Founded on July 13, 2013, our organization stands on the pillars of
+            <span className="font-semibold text-primary"> Non-violence, Noble Charities, and Peaceful Living</span>.
+            We are dedicated to uniting the Vaishya community globally, fostering entrepreneurship,
+            and providing a platform for social upliftment.
           </p>
+          <div className="h-1 w-24 bg-primary mx-auto rounded-full"></div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <ProgramsGrid />
+      <StatsCounter />
+
+      {/* Featured Initiatives Section (Bonus as per Prompt) */}
+      <section className="py-16 bg-orange-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Initiatives</h2>
+            <p className="text-gray-600">Driving change through targeted community actions.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-orange-100">
+              <h3 className="text-xl font-bold mb-2">15% Employment Goal</h3>
+              <p className="text-gray-600">Encouraging every employer in our community to hire at least 15% of their workforce from within the community.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-orange-100">
+              <h3 className="text-xl font-bold mb-2">Young Entrepreneur Platform</h3>
+              <p className="text-gray-600">Connecting aspiring startups with mentors, investors, and resources to build the next unicorn.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-orange-100">
+              <h3 className="text-xl font-bold mb-2">Competitive Exam Coaching</h3>
+              <p className="text-gray-600">Providing free or subsidized coaching for Civil Services, Medical, and Engineering entrance exams.</p>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <LeadershipTestimonials />
+      <Footer />
+    </main>
   );
 }
