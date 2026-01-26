@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -9,9 +10,13 @@ export function Footer() {
                     {/* About Column */}
                     <div>
                         <div className="flex items-center space-x-2 mb-4">
-                            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
-                                IVF
-                            </div>
+                            <Image
+                                src="/logo.jpg"
+                                alt="International Vaish Federation logo"
+                                width={40}
+                                height={40}
+                                className="rounded-full object-cover"
+                            />
                             <h3 className="font-bold text-lg">Intl. Vaish Federation</h3>
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed mb-4">

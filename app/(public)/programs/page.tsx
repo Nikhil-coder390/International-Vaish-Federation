@@ -82,7 +82,7 @@ export default function ProgramsPage() {
                     </p>
                     <div className="flex justify-center gap-4">
                         <Button variant="secondary" size="lg" className="bg-white text-primary hover:bg-gray-100">Volunteer</Button>
-                        <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary">Donate</Button>
+                        <Button variant="outline" size="lg" className="bg-primary border-white text-white hover:bg-primary-dark">Donate</Button>
                     </div>
                 </div>
             </section>
