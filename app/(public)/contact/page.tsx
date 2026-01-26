@@ -89,7 +89,7 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-gray-900">Email</h3>
-                                            <p className="text-gray-600">contact@ivf-global.net<br />support@ivf-global.net</p>
+                                            <p className="text-gray-600">internationalvaishfederationap@gmail.com</p>
                                         </div>
                                     </div>
 

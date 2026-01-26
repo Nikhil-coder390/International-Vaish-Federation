@@ -33,7 +33,7 @@ export function LeadershipTestimonials() {
                     </div>
                 </div>
 
-                {/* Testimonials Section */}
+                {/* Testimonials Section
                 <div>
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Community Voices</h2>
@@ -66,7 +66,7 @@ export function LeadershipTestimonials() {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

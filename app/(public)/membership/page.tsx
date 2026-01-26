@@ -23,6 +23,7 @@ export default function MembershipPage() {
             <PageHeader
                 title="Membership"
                 subtitle="Become a part of the world's largest Vaishya community network."
+                showJoinButton={true}
             />
 
             {/* Benefits Section */}
@@ -79,7 +80,7 @@ export default function MembershipPage() {
                             </div>
                             <h3 className="text-xl font-bold text-center mb-2">Life Member</h3>
                             <p className="text-center text-gray-500 mb-6">For individuals committed to the long-term vision.</p>
-                            <div className="text-center text-3xl font-bold text-primary mb-6">₹ 5,100</div>
+                            {/*<div className="text-center text-3xl font-bold text-primary mb-6">₹ 5,100</div>*/}
                             <Button className="w-full" variant="outline">Learn More</Button>
                         </div>
 
@@ -93,7 +94,7 @@ export default function MembershipPage() {
                             </div>
                             <h3 className="text-xl font-bold text-center mb-2">Patron Member</h3>
                             <p className="text-center text-gray-500 mb-6">For distinguished members seeking leadership roles.</p>
-                            <div className="text-center text-3xl font-bold text-primary mb-6">₹ 21,000</div>
+                            {/*<div className="text-center text-3xl font-bold text-primary mb-6">₹ 21,000</div>*/}
                             <Button className="w-full">Apply Now</Button>
                         </div>
 
@@ -104,7 +105,7 @@ export default function MembershipPage() {
                             </div>
                             <h3 className="text-xl font-bold text-center mb-2">Corporate Member</h3>
                             <p className="text-center text-gray-500 mb-6">For businesses looking to partner and network.</p>
-                            <div className="text-center text-3xl font-bold text-primary mb-6">₹ 51,000</div>
+                            {/*<div className="text-center text-3xl font-bold text-primary mb-6">₹ 51,000</div>*/}
                             <Button className="w-full" variant="outline">Contact Us</Button>
                         </div>
                     </div>

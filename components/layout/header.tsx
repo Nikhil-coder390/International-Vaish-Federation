@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, Facebook, Twitter, Instagram } from "lucide-react";
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,10 +24,15 @@ export function Header() {
                             <span>+91 98765 43210</span>
                         </a>
                         <div className="hidden md:flex space-x-3">
-                            {/* Icons placeholders as text for now or Lucide icons if desired */}
-                            <a href="#" className="hover:text-white/80">FB</a>
-                            <a href="#" className="hover:text-white/80">TW</a>
-                            <a href="#" className="hover:text-white/80">IN</a>
+                            <a href="#" className="hover:text-white/80" aria-label="Facebook">
+                                <Facebook size={16} />
+                            </a>
+                            <a href="#" className="hover:text-white/80" aria-label="Twitter">
+                                <Twitter size={16} />
+                            </a>
+                            <a href="#" className="hover:text-white/80" aria-label="Instagram">
+                                <Instagram size={16} />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -46,9 +51,9 @@ export function Header() {
                                 className="object-contain"
                             />
                         </div>
-                        <div className="w-12 h-12 relative">
+                        <div className="w-12 h-12 relative lg:hidden">
                             <Image
-                                src="/God.png"
+                                src="/god.png"
                                 alt="God Image"
                                 fill
                                 className="object-contain"
@@ -70,7 +75,7 @@ export function Header() {
                         <Link href="/about" className="hover:text-primary transition-colors">About Us</Link>
                         <Link href="/programs" className="hover:text-primary transition-colors">Programs</Link>
                         <Link href="/membership" className="hover:text-primary transition-colors">Membership</Link>
-                        <Link href="/resources" className="hover:text-primary transition-colors">Resources</Link>
+                        <Link href="/gallery" className="hover:text-primary transition-colors">Gallery</Link>
                         <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
                     </nav>
 
@@ -82,6 +87,14 @@ export function Header() {
                         <Link href="/login">
                             <Button>Login</Button>
                         </Link>
+                        <div className="w-12 h-12 relative">
+                            <Image
+                                src="/god.png"
+                                alt="God Image"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
                     </div>
 
                     {/* Mobile Menu Toggle */}
