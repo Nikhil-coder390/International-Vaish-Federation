@@ -11,7 +11,7 @@ export function Header() {
 
     return (
         <header className="w-full relative z-50">
-            {/* Top Bar - Gradient */}
+            {/* Top Bar - Gradient 
             <div className="bg-header-gradient text-white py-2 px-4">
                 <div className="container mx-auto flex justify-between items-center text-sm">
                     <div className="flex items-center space-x-4">
@@ -36,25 +36,17 @@ export function Header() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>*/}
 
             {/* Main Navigation */}
             <div className="bg-white shadow-md sticky top-0">
-                <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-                    {/* Logo Area */}
+                <div className="w-full px-6 py-3 flex justify-between items-center">
+                    {/* Logo Area - Left */}
                     <Link href="/" className="flex items-center space-x-3">
                         <div className="w-12 h-12 relative">
                             <Image
                                 src="/logo.jpg"
                                 alt="IVF Logo"
-                                fill
-                                className="object-contain"
-                            />
-                        </div>
-                        <div className="w-12 h-12 relative lg:hidden">
-                            <Image
-                                src="/god.png"
-                                alt="God Image"
                                 fill
                                 className="object-contain"
                             />
@@ -69,25 +61,36 @@ export function Header() {
                         </div>
                     </Link>
 
-                    {/* Desktop Menu */}
-                    <nav className="hidden lg:flex items-center space-x-6 font-medium text-gray-700">
-                        <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-                        <Link href="/about" className="hover:text-primary transition-colors">About Us</Link>
-                        <Link href="/programs" className="hover:text-primary transition-colors">Programs</Link>
-                        <Link href="/membership" className="hover:text-primary transition-colors">Membership</Link>
-                        <Link href="/gallery" className="hover:text-primary transition-colors">Gallery</Link>
-                        <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
-                    </nav>
+                    {/* Desktop Menu and Actions - Right Aligned */}
+                    <div className="hidden lg:flex items-center space-x-8">
+                        <nav className="flex items-center space-x-8 font-medium text-gray-700">
+                            <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                            <Link href="/about" className="hover:text-primary transition-colors">About Us</Link>
+                            {/*<Link href="/programs" className="hover:text-primary transition-colors">Programs</Link>*/}
+                            <Link href="/membership" className="hover:text-primary transition-colors">Membership</Link>
+                            <Link href="/gallery" className="hover:text-primary transition-colors">Gallery</Link>
+                            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
+                        </nav>
 
-                    {/* Actions */}
-                    <div className="hidden lg:flex items-center space-x-3">
-                        <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
-                            Join Now
-                        </Button>
-                        <Link href="/login">
-                            <Button>Login</Button>
-                        </Link>
-                        <div className="w-12 h-12 relative">
+                        {/* Actions */}
+                        <div className="flex items-center space-x-4">
+                            <Link href="/login">
+                                <Button>Login</Button>
+                            </Link>
+                            <div className="w-12 h-12 relative">
+                                <Image
+                                    src="/god.png"
+                                    alt="God Image"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Mobile Menu Toggle */}
+                    <div className="lg:hidden flex items-center space-x-2">
+                        <div className="w-10 h-10 relative">
                             <Image
                                 src="/god.png"
                                 alt="God Image"
@@ -95,10 +98,6 @@ export function Header() {
                                 className="object-contain"
                             />
                         </div>
-                    </div>
-
-                    {/* Mobile Menu Toggle */}
-                    <div className="lg:hidden">
                         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-700 p-2">
                             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
@@ -111,9 +110,9 @@ export function Header() {
                         <nav className="flex flex-col space-y-4">
                             <Link href="/" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Home</Link>
                             <Link href="/about" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>About Us</Link>
-                            <Link href="/programs" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Programs</Link>
+                            {/*<Link href="/programs" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Programs</Link>*/}
                             <Link href="/membership" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Membership</Link>
-                            <Link href="/resources" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Resources</Link>
+                            <Link href="/gallery" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Gallery</Link>
                             <Link href="/contact" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Contact</Link>
                             <div className="pt-4 flex flex-col space-y-2">
                                 <Button variant="outline" className="w-full justify-center">Join Now</Button>
