@@ -26,7 +26,6 @@ export function HeroCarousel() {
                 src="/hero_bg.mp4"
                 autoPlay
                 muted
-                loop
                 playsInline
                 className="absolute inset-0 w-full h-full object-cover"
             />
