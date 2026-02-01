@@ -68,6 +68,7 @@ export function Header() {
                             <Link href="/about" className="hover:text-primary transition-colors">About Us</Link>
                             {/*<Link href="/programs" className="hover:text-primary transition-colors">Programs</Link>*/}
                             <Link href="/membership" className="hover:text-primary transition-colors">Membership</Link>
+                            <Link href="/partners" className="hover:text-primary transition-colors">Partners</Link>
                             <Link href="/gallery" className="hover:text-primary transition-colors">Gallery</Link>
                             <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
                         </nav>
@@ -112,6 +113,7 @@ export function Header() {
                             <Link href="/about" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>About Us</Link>
                             {/*<Link href="/programs" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Programs</Link>*/}
                             <Link href="/membership" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Membership</Link>
+                            <Link href="/partners" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Partners</Link>
                             <Link href="/gallery" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Gallery</Link>
                             <Link href="/contact" className="text-gray-700 hover:text-primary" onClick={() => setIsMenuOpen(false)}>Contact</Link>
                             <div className="pt-4 flex flex-col space-y-2">

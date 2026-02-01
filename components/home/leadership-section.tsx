@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image"; // In a real app, use Image
-import { Quote } from "lucide-react";
 
 export function LeadershipTestimonials() {
     return (
@@ -15,19 +14,26 @@ export function LeadershipTestimonials() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-                        {[1, 2, 3, 4, 5].map((i) => (
-                            <div key={i} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow text-center pb-4">
-                                <div className="h-48 w-full mb-4 relative">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {[
+                            { name: "Kona Srinivas Roa", role: "State President", image: "/kona-srinivas-rao.jpeg" },
+                            { name: "Gontla Rama Mohan Rao", role: "General Secretary", image: "/gontla-rama-mohan-rao.jpeg" },
+                            { name: "Deepti Parepalli", role: "President", image: "/deepthi.jpeg" },
+                            { name: "Mallipeddi Lakshmidevi", role: "Chief Secretary", image: "/lakshmi.jpeg" },
+                            { name: "Komali", role: "Treasurer", image: "/komali.jpeg" },
+                            { name: "Kanamarlapudi Lakshmi Mohan", role: "Additional General Secretary", image: "/kanamarlapudi-lakshmi.jpeg" }
+                        ].map((leader) => (
+                            <div key={leader.name} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow text-center pb-4">
+                                <div className="bg-gray-100 h-56 w-full mb-4 relative">
                                     <Image
-                                        src={`/leader_${i}.png`}
-                                        alt={`Leader ${i}`}
+                                        src={leader.image}
+                                        alt={leader.name}
                                         fill
-                                        className="object-cover"
+                                        className="object-contain"
                                     />
                                 </div>
-                                <h3 className="font-bold text-lg text-gray-900">Leader Name {i}</h3>
-                                <p className="text-sm text-primary font-medium">Designation</p>
+                                <h3 className="font-bold text-lg text-gray-900">{leader.name}</h3>
+                                <p className="text-sm text-primary font-medium">{leader.role}</p>
                             </div>
                         ))}
                     </div>
