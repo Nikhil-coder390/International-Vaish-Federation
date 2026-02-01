@@ -93,7 +93,7 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {[
                             { name: "Kona Srinivas Roa", role: "State President", image: "/kona-srinivas-rao.jpeg" },
-                            { name: "Gontla Rama Mohan Rao", role: "General Secretary", image: "/gontla-rama-mohan-rao.jpeg" }
+                            { name: "Gontla Ram Mohan Rao", role: "General Secretary", image: "/gontla-ram-mohan-rao.png" }
                         ].map((leader, i) => (
                             <div key={i} className="bg-gray-50 p-6 rounded-xl border border-gray-100 text-center">
                                 <div className="w-80 h-80 relative rounded-lg overflow-hidden mx-auto mb-4 border-4 border-white shadow-sm">
@@ -121,8 +121,8 @@ export default function AboutPage() {
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
-                            { name: "Deepti Parepalli", role: "President", image: "/deepthi.jpeg" },
-                            { name: "Mallipeddi Lakshmidevi", role: "Chief Secretary", image: "/lakshmi.jpeg" },
+                            { name: "Gunda Naga Supraja", role: "President", image: "/gunda-naga-supraja-women-president.png" },
+                            { name: "Dundi Deepthi", role: "Special Advisory", image: "/deepthi.jpeg" },
                             { name: "Komali", role: "Treasurer", image: "/komali.jpeg" },
                             { name: "Kanamarlapudi Lakshmi Mohan", role: "Additional General Secretary", image: "/kanamarlapudi-lakshmi.jpeg" }
                         ].map((leader, i) => (

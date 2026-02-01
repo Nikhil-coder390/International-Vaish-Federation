@@ -17,11 +17,14 @@ export function LeadershipTestimonials() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
                             { name: "Kona Srinivas Roa", role: "State President", image: "/kona-srinivas-rao.jpeg" },
-                            { name: "Gontla Rama Mohan Rao", role: "General Secretary", image: "/gontla-rama-mohan-rao.jpeg" },
-                            { name: "Deepti Parepalli", role: "President", image: "/deepthi.jpeg" },
-                            { name: "Mallipeddi Lakshmidevi", role: "Chief Secretary", image: "/lakshmi.jpeg" },
-                            { name: "Komali", role: "Treasurer", image: "/komali.jpeg" },
-                            { name: "Kanamarlapudi Lakshmi Mohan", role: "Additional General Secretary", image: "/kanamarlapudi-lakshmi.jpeg" }
+                            { name: "Gontla Ram Mohan Rao", role: "Chief Secretary", image: "/gontla-ram-mohan-rao.png" },
+                            { name: "Kusumanchi Subrayulu", role: "Treasurer", image: "/kusumanchi-subrayulu-treasurer.png" },
+                            { name: "Ventrapragada Veeranjaneyalu", role: "Organizing Secretary", image: "/ventrapragada-veeranjaneyalu-organizing-secretary.png" },
+                            { name: "Pallapothu Venkateswarlu", role: "Coordinator", image: "/pallapothu-venkateswarlu-coordinator.png" },
+                            { name: "Karumuri Mahesh", role: "Additional Chief Secretary", image: "/karumuri-mahesh-additional-chief-secretary.png" },
+                            { name: "Chakka Suryaprakash Gupta", role: "Additional Treasurer", image: "/chakka-suryaprakash-gupta-additional-treasurer.png" },
+                            { name: "Gunda Naga Supraja", role: "Women President", image: "/gunda-naga-supraja-women-president.png" },
+                            { name: "Gajulapalli Abhinay", role: "Youth President", image: "/gajulapalli-abhinay-youth-president.png" },
                         ].map((leader) => (
                             <div key={leader.name} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow text-center pb-4">
                                 <div className="bg-gray-100 h-56 w-full mb-4 relative">
